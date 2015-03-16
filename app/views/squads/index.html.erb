@@ -1,0 +1,18 @@
+<div ng-app='app.squadApp' ng-controller='SquadListCtrl'>
+  <table ng-if="squads">
+    <thead>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Size</th>
+      <th>Event</th>
+    </thead>
+    <tbody>
+      <tr ng-repeat="squad in squads">
+        <td>{{squad.name}}</td>
+        <td>{{squad.email}}</td>
+        <td>{{squad.max}}</td>
+        <td>{{squad.event}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
